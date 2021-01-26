@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SSH4Android</string>
+    <string name="button">Button</string>
+    <string name="address">Address:</string>
+    <string name="username">Username:</string>
+    <string name="connect">Connect</string>
+    <string name="password">Password:</string>
+    <string name="command">Command:</string>
+    <string name="location_of_file">Location of file:</string>
+    <string name="file_location">File location:</string>
+    <string name="run_command_on_remote_host_or_use_get_file_button_to_copy_remote_file">Run command on remote host or use Get filebutton to copy remote file.</string>
+    <string name="or_to_copy_remote_file">Or to copy remote file:</string>
+    <string name="get_file">Get file</string>
+    <string name="run_command_or_get_remote_file">Run command or get remote file.</string>
+    <string name="run_command">Run command</string>
+    <string name="run_command_or_get_push_file">Run command or get/push file.</string>
+    <string name="push_file">Push file.</string>
+    <string name="run_command_get_or_push_file">Run command, get or push file.</string>
+    <string name="destination">Destination:</string>
+    <string name="send_file">Send file</string>
+</resources>

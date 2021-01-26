@@ -8,7 +8,7 @@ You should be able to build SSH4Android.apk by using the command...
 git clone https://github.com/jacktenor/kodibuildstv
 
 Then from the Android Studio welcome screen choose "Open an Existing Project".                                
-Navigate to and highlight the "SSH4Android" directory that's within the "ssh4ndroid" directory you cloned.                      
+Navigate to and highlight the "SSH4Android" directory that's inside the "ssh4ndroid" directory you cloned.                      
 Click "ok" and after it's imported use the build menu to build it.                                      
 I'm sure theres a better way but that worked for me.                                   
 

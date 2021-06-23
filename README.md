@@ -15,4 +15,4 @@ I'm sure theres a better way but that worked for me.
 I know very little about all this so if anyone can improve on this please do.
 
 
-![alt text](https://github.com/jacktenor/ssh4android/blob/main/Screenshot_1.png?raw=true)
+![alt text](https://github.com/jacktenor/ssh4android/blob/main/ssh.png?raw=true)

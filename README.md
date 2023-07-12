@@ -5,7 +5,7 @@ SSH4Android has 3 options, run a command via SSH, send a file, and pull a file.
 
 You should be able to build SSH4Android.apk by using the command...
 
-git clone https://github.com/jacktenor/kodibuildstv
+git clone https://github.com/jacktenor/ssh4android
 
 Then from the Android Studio welcome screen choose "Open an Existing Project".                                
 Navigate to and highlight the "SSH4Android" directory that's inside the "ssh4ndroid" directory you cloned.                      

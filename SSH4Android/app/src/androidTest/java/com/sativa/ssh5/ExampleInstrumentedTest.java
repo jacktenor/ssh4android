@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.sativa.ssh5", appContext.getPackageName());
+        assertEquals("com.sativa.ssh4android", appContext.getPackageName());
     }
 }

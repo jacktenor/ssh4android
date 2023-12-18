@@ -1,176 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activemain4"
+    android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/panther"
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".MainActivity4">
+
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="153dp"
-        android:layout_marginLeft="153dp"
         android:layout_marginTop="50dp"
-        android:backgroundTint="#000000"
-        android:text="@string/connect"
-        android:textColor="#FFFFFF"
+        android:minHeight="50dp"
+        android:text="@string/main_menu"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text5"
-        tools:targetApi="lollipop" />
-
-    <EditText
-        android:id="@+id/address"
-        android:layout_width="171dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="45dp"
-        android:importantForAutofill="no"
-        android:inputType="text"
-        android:textColor="#FFFFFF"
-        android:textSize="28sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintStart_toEndOf="@+id/addresstext"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/user"
-        android:layout_width="171dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:importantForAutofill="no"
-        android:inputType="text"
-        android:textColor="#FFFFFF"
-        android:textSize="28sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintStart_toEndOf="@+id/usertext"
-        app:layout_constraintTop_toBottomOf="@+id/address" />
-
-    <EditText
-        android:id="@+id/pass"
-        android:layout_width="171dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:importantForAutofill="no"
-        android:inputType="textPassword"
-        android:textColor="#FFFFFF"
-        android:textSize="28sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintStart_toEndOf="@+id/passtext"
-        app:layout_constraintTop_toBottomOf="@+id/user" />
-
-    <EditText
-        android:id="@+id/file"
-        android:layout_width="171dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:importantForAutofill="no"
-        android:inputType="text"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintStart_toEndOf="@+id/filetext"
-        app:layout_constraintTop_toBottomOf="@+id/pass" />
-
-    <EditText
-        android:id="@+id/file2"
-        android:layout_width="171dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:inputType="text"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintStart_toEndOf="@+id/text5"
-        app:layout_constraintTop_toBottomOf="@+id/file"
-        android:importantForAutofill="no" />
-
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
-        android:id="@+id/addresstext"
-        android:layout_width="120dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:ems="10"
-        android:text="@string/address"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/usertext"
-        android:layout_width="120dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:text="@string/username"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addresstext" />
-
-    <TextView
-        android:id="@+id/passtext"
-        android:layout_width="120dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/password"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toTopOf="@+id/filetext"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/usertext"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/filetext"
-        android:layout_width="120dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/file_location"
-        android:textColor="#FFFFFF"
+        android:background="#00FFFFFF"
+        android:gravity="center"
+        android:text="@string/ssh4android_can_run_commands_as_well_as_file_transfers_on_an_ssh_server_n_if_you_run_the_commands_quot_ls_quot_or_quot_dir_quot_you_receive_an_interactive_list_of_files_and_directories_you_can_download_or_traverse_n_the_second_activity_uses_quot_file_picker_quot_to_select_files_to_upload_to_the_remote_ssh_server"
+        android:textAlignment="center"
+        android:textColor="#757575"
         android:textSize="20sp"
-        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passtext" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
 
     <TextView
-        android:id="@+id/text5"
-        android:layout_width="120dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/destination"
-        android:textColor="#FFFFFF"
-        android:textSize="22sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/filetext" />
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50sp"
+        android:autoLink="all"
+        android:clickable="true"
+        android:text="@string/https_beeralator_com"
+        android:textColor="#757575"
+        android:textColorLink="#757575"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -45,6 +45,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -444,12 +445,12 @@ public class MainActivity2 extends Activity {
             });
         });
 
-
         inputAutoComplete.setText("");
         inputAutoComplete.setEnabled(false);
         enterButton.setEnabled(false);
         inputAutoComplete.setVisibility(View.GONE);
         enterButton.setVisibility(View.GONE);
+        fileListView.setVisibility(View.VISIBLE);
     }
 
     private void displayOutput(String output) {
@@ -571,10 +572,11 @@ public class MainActivity2 extends Activity {
 
     private void updateFileListView(List<String> directoryContents) {
         fileList.clear();  // Clear the list before adding new files
-        // Add the "go up" item at the top\
+        // Add the "go up" item at the top
         fileList.add(GO_UP);
 
-        Collections.sort(directoryContents);
+        // Sort directoryContents with a custom comparator
+        directoryContents.sort(new DirectoryFileComparator());
 
         // Add new files and directories
         fileList.addAll(directoryContents);
@@ -602,6 +604,23 @@ public class MainActivity2 extends Activity {
                 }
             }
         });
+    }
+
+    // Custom comparator to prioritize directories before files
+    private static class DirectoryFileComparator implements Comparator<String> {
+        @Override
+        public int compare(String file1, String file2) {
+            boolean isDirectory1 = file1.endsWith("/");
+            boolean isDirectory2 = file2.endsWith("/");
+
+            if (isDirectory1 && !isDirectory2) {
+                return -1; // Directory comes first
+            } else if (!isDirectory1 && isDirectory2) {
+                return 1;  // Directory comes first
+            } else {
+                return file1.compareToIgnoreCase(file2); // Sort alphabetically for files
+            }
+        }
     }
 
     private void goUpOneLevel() {

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:visibility="visible"
     tools:context=".MainActivity2">
 
     <Button
@@ -35,7 +36,6 @@
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textColorHint="#757575"
-        android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -46,9 +46,11 @@
         android:layout_height="420dp"
         android:layout_marginTop="100dp"
         android:background="@android:color/transparent"
+        android:clickable="true"
         android:divider="@null"
         android:gravity="center|center_horizontal|center_vertical"
         android:isScrollContainer="true"
+        android:longClickable="true"
         android:orientation="vertical"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
@@ -63,9 +65,10 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="275dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="50dp"
         android:background="@android:color/transparent"
         android:progressTint="#757575"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -81,7 +84,21 @@
         android:textColor="#FFFFFF"
         android:visibility="gone"
         app:layout_constraintStart_toEndOf="@+id/inputAutoComplete"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:minWidth="50sp"
+        android:text="@string/main_menu22"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
@@ -98,5 +115,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/showHiddenFilesCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="25dp"
+        android:buttonTint="#757575"
+        android:text="@string/hidden_nfiles"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
